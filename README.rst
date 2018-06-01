@@ -10,11 +10,11 @@ The method the code applies is grid-based chi-squared minimisation. It fits age,
 If you're working off this code as a starting point, suggestions for developing it further are as follows:
  - Vectorise mathematical operations with numpy to speed up the code, although beware running out of memory.
  - Perform analytic chi-squared minimisation to determine the best fitting mass and only grid over age and redshift.
- - Add a function to apply the Calzetti et al. (2000) and add Av as another grid parameter.
- - Add the ability to fit different metallicities.
+ - Add a function to apply the Calzetti et al. (2000) dust law and add Av as another grid parameter.
+ - Add the ability to fit grids of stellar models at different metallicities.
  - Add the ability to fit and more complex star-formation histories by adding SSP models together.
  - Put the whole thing inside a class so you're not accessing variables from the global namespace within functions.
- - Replace the grid method a functional minimisation (e.g. scipy.optimise) or MCMC (e.g. emcee) routine.
+ - Replace the grid method with a functional minimisation (e.g. scipy.optimise) or MCMC (e.g. emcee) routine.
 
 At that point you've already got a highly competitive SED fitting code, where you go from there is up to you...
 
